@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import formatPrice from "@/util/PriceFormat";
-import { productType } from "@/types/ProductTypes";
+import { ProductType } from "@/types/ProductTypes";
 import Link from "next/link";
 
 export default function Product({
@@ -11,9 +11,9 @@ export default function Product({
   id,
   description,
   metadata,
-}: productType) {
+}: ProductType) {
   const { features } = metadata;
-  console.log(features);
+
   return (
     <Link
       href={{

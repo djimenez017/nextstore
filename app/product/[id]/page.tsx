@@ -6,7 +6,7 @@ import formatPrice from "@/util/PriceFormat";
 export default async function page({ searchParams }: SearchParamsTypes) {
   console.log(searchParams);
   return (
-    <div className="flex justify-between gap-24 p-12 text-gray-700">
+    <div className="flex justify-between gap-4 p-12 text-gray-700">
       <Image
         src={searchParams.image}
         width={600}
